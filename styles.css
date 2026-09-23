@@ -1,0 +1,53 @@
+/* Reset básico y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor principal del tablero */
+.scoreboard-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(145deg, #1e1e24, #23232a);
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid #33333f;
+}
+
+/* Estilos de las secciones de texto */
+.score-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.label {
+  color: #a0a0b0;
+}
+
+.value {
+  color: #00e676; /* Color destacado para los números */
+  font-weight: bold;
+}
+
+/* Divisor visual entre estadísticas */
+.divider {
+  font-size: 1.8rem;
+  color: #444455;
+  font-weight: 300;
+}
