@@ -1,6 +1,6 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
-  // Función para actualizar los valores dinámicamente si es necesario
+
   function updateScoreboard(races, points) {
     const racesElement = document.getElementById('races-count');
     const pointsElement = document.getElementById('points-count');
@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Ejemplo de inicialización o actualización futura
-  // updateScoreboard(10, 250);
+  // Actualizar estadísticas al hacer clic
+  document.addEventListener('click', () => {
+    updateScoreboard(10, 250);
+  });
+
 });
